@@ -5,8 +5,7 @@ import com.main.utils.DateUtils;
 public class Demo {
     public static void main(String[] args) {
         User two = new User();
-        String Page = "sdasdsad";
-        two.setName(Page);
+
 
         // 这是调用工具类的获取日期方法
         // 这个代码没有做赋值和接收的操作
@@ -31,7 +30,8 @@ public class Demo {
         User user = new User();
         String dateShortStr = DateUtils.getTodayShort();
         // 这里不对, setName是给user的name属性赋值, 所以你这里把日期字符串赋值给name了
-        user.setName(dateShortStr);
+       String Page = "sdasdsad";
+        user.setName(Page+dateShortStr);
 
         String ioo = new String();
 
@@ -40,7 +40,7 @@ public class Demo {
         // 这里创建了一个新的user对象, 为啥? 上面创建的那个user就没有使用了;
         User iop = new User();
         // 这里给新建的user对象, 名字iop赋值了nickname属性, 但赋值的内容是name,所以是不对的;
-        iop.setNickeName(ioo);
+        user.setNickeName(ioo);
 
         // 当你的返回值是void的时候, 就不用写return了
         return null;
