@@ -1,5 +1,5 @@
-package com.main;
-
+package com.main.June;
+// 这个满分
 public class User {
     private String name ;
 
