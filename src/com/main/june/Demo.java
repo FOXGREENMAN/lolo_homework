@@ -16,21 +16,25 @@ public class Demo {
         // 等号是赋值操作, 将DateUtils.getTodayShort()的返回结果赋值给dateShortStr
         // 另一种说法, 用了dateShortStr接收DateUtils.getTodayShort()方法的返回结果, 二者是一个意思;
         String dateShortStr = DateUtils.getTodayShort();
+        two.setName(dateShortStr);
 
         // 将上面获取到的dateShortStr拼接到name属性后面, 形成新的字符串, 就是nickeName了
 
 
 }
+public  String setNickeNameByName(String one){
+        User user = new User();
+    String dateShortStr = DateUtils.getTodayShort();
+    user.setName(dateShortStr);
+
+    String ioo = new String();
+    ioo = user.getNickeName();
+
+    return ioo;
+
+
+
+        }
 
 }
 
-// 一个class是一个java文件, 不允许在一个java文件里写多个class
-
- class setNickeNameByName {// 题目里, setNickeNameByName是方法名字, 不是类名
-
-    // 同理, 一个class中只有一个main方法, 这是程序的入口; 入口只有一个;
-    public static void main(String[] args) {
-
-
-    }
-}
