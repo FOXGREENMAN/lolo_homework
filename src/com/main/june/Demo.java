@@ -22,19 +22,20 @@ public class Demo {
 
 
 }
-public  String setNickeNameByName(String one){
-        User user = new User();
+public  String setNickeNameByName(String one) {
+    User user = new User();
     String dateShortStr = DateUtils.getTodayShort();
     user.setName(dateShortStr);
 
     String ioo = new String();
-    ioo = user.getNickeName();
 
-    return ioo;
+    ioo = user.getName();
+    User iop = new User();
+    iop.setNickeName(ioo);
 
+return null;
 
-
-        }
+}
 
 }
 
