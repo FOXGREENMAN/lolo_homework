@@ -1,4 +1,4 @@
-package com.main.WhiteBoard;
+package com.main.whiteBoard;
 
 import java.util.Map;
 
