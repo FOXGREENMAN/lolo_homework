@@ -8,6 +8,18 @@ import java.util.Map;
 public class Demo {
     public static void main(String[] args) {
 
+        Fox fox = new Fox();
+        FoxHasDefault foxH = new FoxHasDefault();
+
+        // 这行输出没有默认值的对象
+        System.out.println(fox);
+
+        // 这行输出有默认值的对象
+        System.out.println(foxH);
+
+        // 这样可以创建没有默认值的对象, 且给它赋值;
+        Fox fox_setInfo = new Fox(19,"FOXgreenMan");
+        System.out.println(fox_setInfo);
     }
 
     public static void test(){
