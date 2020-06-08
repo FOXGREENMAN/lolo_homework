@@ -9,6 +9,17 @@ public class User {
 
     private String nickeName;
 
+
+
+    public  User (){
+
+
+    }
+    public  User (String name,String addr){
+        this.name = name;
+        this.addr = addr;
+    }
+
     public String getName() {
 
         return name;
@@ -40,5 +51,15 @@ public class User {
 
     public void setNickeName(String nickeName) {
         this.nickeName = nickeName;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", addr='" + addr + '\'' +
+                ", nickeName='" + nickeName + '\'' +
+                '}';
     }
 }
