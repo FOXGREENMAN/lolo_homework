@@ -14,8 +14,11 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static void createNewsByTitle(){
-
+    public static News createNewsByTitle(String sdasd){
+        News news = new News();
+        String sun = "None";
+        news.setTitle(sun);
+        return null;
     }
 
     /**
@@ -23,7 +26,13 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static void updateNewsByReporter(){
+    public static News updateNewsByReporter(String reporter){
+            News news = new News();
+            String sdad = "sadsad";
+            news.setReporter(sdad);
+
+
+            return  news;
 
     }
 
@@ -34,8 +43,18 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static void changeTitle(){
+    public static Articles changeTitle(String pName, String cName){
+        Articles articles = new Articles();
+        News sadd = new News();
+        sadd.setTitle(cName);
+        articles.setTitle(pName);
 
+
+
+
+
+
+        return articles;
     }
 
 
@@ -48,8 +67,7 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static void setLangByTitle(){
-
+    public static Articles setLangByTitle(Articles art, String langKey , String title ){
     }
 
 
@@ -58,7 +76,11 @@ public class Demo {
      *
      *  入参和返回值按要求修改;
      */
-    public static void proveParentsAndChild(){
+    public static Articles proveParentsAndChild(){
+
+
+        return null;
+
 
     }
 
