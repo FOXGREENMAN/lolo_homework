@@ -8,19 +8,26 @@ import java.util.Map;
 public class Demo {
     public static void main(String[] args) {
 
-        Fox fox = new Fox();
-        FoxHasDefault foxH = new FoxHasDefault();
+        // 这里定义一个字符串;
+        String resultStr = "lolo_";
 
-        // 这行输出没有默认值的对象
-        System.out.println(fox);
+        // 这里定义一个新的字符串, 调用getStr方法, 用新的字符串接收方法的返回值;
+        String newResult = getStr(resultStr);
 
-        // 这行输出有默认值的对象
-        System.out.println(foxH);
+        // 这里打印新的字符串接收的东西;
+        System.out.println(newResult);
 
-        // 这样可以创建没有默认值的对象, 且给它赋值;
-        Fox fox_setInfo = new Fox(19,"FOXgreenMan");
-        System.out.println(fox_setInfo);
     }
+
+    // 这个方法接收一个字符串, 然后在这个字符串的末尾加上FOXMAN, 返回给调用者; 返回的也是一个字符串;
+    public static String getStr(String str){
+
+        str = str + "FOXMAN";
+
+        return str;
+    }
+
+
 
     public static void test(){
         String[] pidArr = {"276150","276150","276150","276150","282353","279237","283036","283036","283036","283036","288009","288009","283053","283053","283053","283053","283177","283177","283177","283557","283557","279888","279888","284159","284378","283706"};
@@ -46,5 +53,36 @@ public class Demo {
 
         }
         return rsultStr;
+    }
+
+    public static void instanceTest(){
+
+        Fox fox = new Fox();
+        FoxHasDefault foxH = new FoxHasDefault();
+
+        // 这行输出没有默认值的对象
+        System.out.println(fox);
+
+        // 这行输出有默认值的对象
+        System.out.println(foxH);
+
+        // 这样可以创建没有默认值的对象, 且给它赋值;
+        Fox fox_setInfo = new Fox(19,"FOXgreenMan");
+        System.out.println(fox_setInfo);
+    }
+
+    public static void annotaion(){
+
+//         这是单行注释
+//
+//        int i = 233;
+//        String strI = i + "";
+//
+//        String strII = String.valueOf(i);
+//
+//        System.out.println(strI);
+//
+//        System.out.println(strII);
+
     }
 }
