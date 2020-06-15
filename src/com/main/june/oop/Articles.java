@@ -9,9 +9,18 @@ public class Articles {
   private  String describe;
   private  String size;
 
+    @Override
+    public String toString() {
+        return "Articles{" +
+                "lang='" + lang + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", describe='" + describe + '\'' +
+                ", size='" + size + '\'' +
+                '}';
+    }
 
-
-  public String setLangByTitle(){
+    public String setLangByTitle(){
       return null;
   }
     public String getLang() {
@@ -27,6 +36,7 @@ public class Articles {
     }
 
     public void setTitle(String title) {
+
         this.title = title;
     }
 
@@ -54,12 +64,16 @@ public class Articles {
         this.size = size;
     }
 
-    public Articles(String lang, String title, String content, String describe, String size){
-        this.content = "None";
-        this.describe = "None";
-        this.lang = "None";
-        this.size = "None";
-        this.title = title;
+
+
+    public Articles(String alang, String atitle, String acontent, String adescribe, String asize){
+        lang = alang;
+        title = atitle;
+        content = acontent;
+        describe = adescribe;
+        size = asize;
+
+
 
 
     }
@@ -67,6 +81,8 @@ public class Articles {
     public  Articles(){
 
     }
+
+
 
 }
 

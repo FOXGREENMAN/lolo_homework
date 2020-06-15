@@ -7,6 +7,18 @@ public class Demo {
 
     public static void main(String[] args) {
 
+        //第一题
+        //定义一个实体接受方法的返回值
+        //调用方法, 传入自定义参数(title)获取返回值
+        //打印方法的返回值;
+
+        News news = createNewsByTitle("sda");
+        System.out.println(news);
+
+        //第二题
+        Articles articles = changeTitle("sad","sadsad");
+
+
     }
 
     /**
@@ -14,11 +26,17 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static News createNewsByTitle(String sdasd){
-        News news = new News();
-        String sun = "None";
-        news.setTitle(sun);
-        return null;
+    public static News createNewsByTitle(String sun){
+        // 创建news对象
+        News  news = new News("None",sun,"None","None","None");
+        //给news对象的所有属性赋值
+
+
+        //给news的title属性赋值
+
+        //返回news
+
+        return news;
     }
 
     /**
@@ -26,13 +44,13 @@ public class Demo {
      *
      * 入参和返回值按要求修改;
      */
-    public static News updateNewsByReporter(String reporter){
-            News news = new News();
-            String sdad = "sadsad";
-            news.setReporter(sdad);
+    public static News updateNewsByReporter(News oald,String reporter){
 
 
-            return  news;
+          oald.setReporter(reporter);
+
+
+          return oald;
 
     }
 
@@ -44,17 +62,21 @@ public class Demo {
      * 入参和返回值按要求修改;
      */
     public static Articles changeTitle(String pName, String cName){
-        Articles articles = new Articles();
-        News sadd = new News();
-        sadd.setTitle(cName);
-        articles.setTitle(pName);
+
+        News news = new News();
+        news.setTitle(cName);
+        System.out.println(news.getTitle());
+        news.setTitle(pName);
 
 
 
 
 
 
-        return articles;
+
+
+
+        return null;
     }
 
 
@@ -68,6 +90,8 @@ public class Demo {
      * 入参和返回值按要求修改;
      */
     public static Articles setLangByTitle(Articles art, String langKey , String title ){
+        
+        return null;
     }
 
 
