@@ -1,5 +1,7 @@
 package com.main.june.oop.answer.entity;
 
+import com.alibaba.fastjson.JSON;
+
 public class Articles {
   private  String lang;
   private  String title;
@@ -8,6 +10,28 @@ public class Articles {
   private  String size;
 
 
+    /**
+     * 设置Articles对象的两个属性
+     *
+     * @param articles 原始对象
+     * @param langKey 语言标识
+     * @param title 标题
+     * @return 更新了以上两个属性的对象
+     */
+    public Articles setLangByTitle(Articles articles, String langKey, String title){
+
+        // 打印方法接收的, 原始的articles对象
+        System.out.println("初始化articles 对象:" + JSON.toJSONString(articles));
+
+        // 用入参的 langKey 设置原始对象的lang属性
+        articles.setLang(langKey);
+
+        // 用入参的 title 设置原始对象的title属性
+        articles.setTitle(title);
+
+        // 返回该对象
+        return articles;
+    }
 
   public String setLangByTitle(){
       return null;

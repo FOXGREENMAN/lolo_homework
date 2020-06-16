@@ -1,6 +1,8 @@
 package com.main.june.oop.answer.entity;
 
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.Date;
 
 // 类名前面需要用public 修饰, 才能被其他包引用
@@ -54,6 +56,22 @@ public class News extends Articles {
         this.setContent(content);
         this.setDescribe(describe);
         this.setSize(size);
+    }
+
+    /**
+     * News的构造方法
+     *
+     * @param articles 原始对象
+     * @param langKey 语言标识
+     * @param title 标题
+     */
+    public News (Articles articles, String langKey, String title){
+
+        // 用传入的对象接收父类方法返回的更新后的对象
+        articles = setLangByTitle(articles, langKey, title);
+
+        // 打印更新后的对象
+        System.out.println("News 构造方法里调用父类方法setLangByTitle, 变更articles 之后的结果:" + JSON.toJSONString(articles));
     }
 
 
