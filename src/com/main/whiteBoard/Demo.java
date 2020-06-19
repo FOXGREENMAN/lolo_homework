@@ -8,14 +8,15 @@ import java.util.Map;
 public class Demo {
     public static void main(String[] args) {
 
-        // 这里定义一个字符串;
+       /* // 这里定义一个字符串;
         String resultStr = "lolo_";
 
         // 这里定义一个新的字符串, 调用getStr方法, 用新的字符串接收方法的返回值;
         String newResult = getStr(resultStr);
 
         // 这里打印新的字符串接收的东西;
-        System.out.println(newResult);
+        System.out.println(newResult);*/
+       print99();
 
     }
 
@@ -27,6 +28,34 @@ public class Demo {
         return str;
     }
 
+    public static void print99(){
+        for (int i = 1; i < 9; i++) {
+            System.out.println();
+            for (int j = 1; j < i; j++) {
+                System.out.print("*");
+            }
+        }
+    }
+
+    public static void pool(){
+
+        char[] c = new char[]{'a','b','c','d','e','f'};
+
+        for (int i = 0; i < c.length; i++) {
+            System.out.println(c[i]);
+        }
+
+    }
+
+    public static void pool(int a){
+
+        char[] c = new char[5];
+
+        for (int i = 0/*第一个分号, 代表循环的起始条件*/; i < c.length/*第二个分号, 代表循环执行的依据,既这个条件成立,循环才执行*/; i++ /*最后一个标识循环执行完一次后, 触发的操作*/) {
+            // do somthing
+        }
+
+    }
 
 
     public static void test(){
