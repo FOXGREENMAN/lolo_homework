@@ -21,7 +21,9 @@ public class Demo {
 //            char[] c = new char[]{'a','b','c','d','e','f'};
 //
 //
-//            for (int i = 0; i < c.length; i++) {
+//
+//
+// for (int i = 0; i < c.length; i++) {
 //                if ('e' == c[i]){
 //                    System.out.println("sdadsad");
 //                }

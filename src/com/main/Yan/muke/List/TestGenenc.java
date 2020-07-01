@@ -28,8 +28,16 @@ public class TestGenenc {
 
     public  void testForEach(){
         for (Course cr: courses){
+            System.out.println(cr.id+"."+cr.name);
 
         }
     }
+    public static void main(String[] args){
+        TestGenenc testGenenc = new TestGenenc();
+        testGenenc.testAdd();
+        testGenenc.testForEach();
 
+    }
 }
+
+

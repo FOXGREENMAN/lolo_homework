@@ -15,16 +15,20 @@ public class Demo {
         // 遍历方法调用
         // 先调用创建方法;
 //        List<String> demoList = getStrList("a","b","c","foxman","lolo");
+
         // 再调用遍历方法
 //        printStrList(demoList);
+
 
         // 删除方法调用
 //        List<String> needDelList = getStrList("a","b","c","foxman","lolo");
 //        delStrList("b",needDelList);
 
+
         // 更新方法调用
 //        List<String> needUpList = getStrList("a","b","c","foxman","lolo");
 //        updateStrList("foxman","foxman_loki",needUpList);
+
 
         /** ---- ArrayList的其他常用方法 ---- */
         List<String> demoOtherList = getStrList("a","b","c","foxman","lolo");

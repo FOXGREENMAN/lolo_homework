@@ -70,10 +70,8 @@ public class Demo {
 
         for (int i = 0; i < pidArr.length; i++) {
 
-
         }
         for (int j = 0; j < uidArr.length; j++) {
-
 
         }
         return rsultStr;
