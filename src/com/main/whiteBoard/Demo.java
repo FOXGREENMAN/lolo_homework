@@ -16,7 +16,7 @@ public class Demo {
 
         // 这里打印新的字符串接收的东西;
         System.out.println(newResult);*/
-       print99();
+        pool();
 
     }
 
@@ -34,12 +34,15 @@ public class Demo {
 
     public static void pool(){
 
-        char[] c = new char[]{'a','b','c','d','e','f'};
+        int[] arr = new int[]{1,3,5,7,9};
+        int sum = 0;
 
-        for (int i = 0; i < c.length; i++) {
-            System.out.println(c[i]);
+        for (int i = 0; i < arr.length; i++) {
+
+            sum +=arr[i];
+
         }
-
+        System.out.println(sum);
     }
 
     public static void pool(int a){
@@ -107,6 +110,27 @@ public class Demo {
 //        System.out.println(strI);
 //
 //        System.out.println(strII);
+
+    }
+
+    public static void arry(){
+
+        // 创建数组,指定长度不指定内容(隐示初始化);
+        int[] iArry = new int[3];
+
+        // 创建数组,指定内容(显示初始化);
+        int[] iArry_1 = new int[]{1,2,3};
+
+        // 获取数组元素
+        int i =iArry_1[0];
+
+        // 给数组元素赋值
+        iArry_1[0] = 6;
+
+        // 遍历数组
+        for (int j = 0; j < iArry_1.length; j++) {
+            System.out.println(iArry_1[i]);
+        }
 
     }
 }
