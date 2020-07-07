@@ -2,7 +2,7 @@ package com.main.july.week_1_exam;
 
 public class Test2 {
     public static void main(String[] args) {
-            Szi szi = new Szi(1,2,"-");
+            Szi szi = new Szi(1,10,"-");
             Test2 test2 = new Test2();
             test2.jiafa(szi);
             test2.sfa(szi);
@@ -12,14 +12,14 @@ public class Test2 {
 
 public void jiafa(Szi siz){
     int i =siz.getI();
-    int c = siz.getI();
+    int c = siz.getJ();
     int s = i+c;
     System.out.println(s);
 }
 
 public void sfa(Szi siz){
     int i =siz.getI();
-    int c = siz.getI();
+    int c = siz.getJ();
     int s = i*c;
     System.out.println(s);
 }
