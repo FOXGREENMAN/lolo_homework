@@ -24,6 +24,20 @@ public String bit(Order order){
     }
 
 }
+    // fox
+    public String bit_fox(Order order){
+//        boolean s = false;
+//        boolean i =order.isOpen();  这里写错了, false代表关闭, 所以应该判断 isOpen == true
+        if (order.isOpen()) { // 这个属性本身就是boolean类型的, 所以可以直接用来判断, 就不用谢上面的代码了;
+            System.out.println("SUCC");
+            return "Succ";
+        }else{
+            System.out.println("FAIL");
+            return "FAIL";
+        }
+
+    }
+// 这个满分
 public String sin(Order order){
    byte sd = order.getType();
         switch (sd){
