@@ -3,7 +3,7 @@ package com.main.july.week_1_exam;
 public class Order {
     private long id;
 
-    private double type;
+    private byte type ;
 
     private short top;
 
@@ -15,7 +15,20 @@ public class Order {
 
     private  int idx;
 
+public Order(){
 
+}
+public Order(long id,byte type,short top, String symbol, char symbolFirst, boolean isOpen,int idx){
+    this.id = id;
+    this.type = type;
+    this.top = top;
+    this.symbol = symbol;
+    this.symbolFirst = symbolFirst;
+    this.isOpen = isOpen;
+    this.idx = idx;
+
+
+}
 
     public long getId() {
         return id;
@@ -25,11 +38,11 @@ public class Order {
         this.id = id;
     }
 
-    public double getType() {
+    public byte getType() {
         return type;
     }
 
-    public void setType(double type) {
+    public void setType(byte type) {
         this.type = type;
     }
 
