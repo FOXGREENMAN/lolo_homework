@@ -126,9 +126,10 @@ public class Demo {
         iArry_1[0] = 6;
 
         // 遍历数组
-        for (int j = 0; j < iArry_1.length; j++) {
+        for (int j = iArry_1.length-1; j > iArry_1.length; j--) {
             System.out.println(iArry_1[i]);
         }
 
     }
+
 }

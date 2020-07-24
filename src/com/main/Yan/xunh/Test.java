@@ -103,13 +103,13 @@ public class Test {
 //            }
 
     //每个元素+1
-            String string="";
-        String[] asdasd = new String[]{"1","2"};
-        for (int i = 0; i < asdasd.length; i++){
-            string =string+asdasd[i];
-
-        }
-        System.out.println(string);
+//            String string="";
+//        String[] asdasd = new String[]{"1","2"};
+//        for (int i = 0; i < asdasd.length; i++){
+//            string =string+asdasd[i];
+//
+//        }
+//        System.out.println(string);
 //        int  sun = 21313;
 //        int[] arr = new int[]{1,3,5,7,9};
 //
@@ -119,6 +119,78 @@ public class Test {
 //            System.out.println(arr[i]);
 //
 //        }
+//            int i =1;
+//            while (i<= 100){
+//                //获取变量i<=100的结果 是true还是false; 如果是rrue 就执行while大括号里面的方法,如果是false不执行
+//                System.out.println(i);
+//                i++;//不断改变变量i的值
+//
+//            }
+//            //与上面的while方法一样的结果
+//            for (int i = 1; i <= 100; i++){
+//
+//            }
+
+//        int m = 1;
+//        do {
+//            System.out.println(m);
+//            m++;
+//        }while (m <= 100);
+//        int in = 0;
+//        for (int i = 1; i< 101; i++){
+//            if (i % 2 ==0){
+//                in +=i;
+//            }
+//        }
+//        System.out.println(in);
+//        int ie = 0;
+//        int k = 1;
+//        while (k <=100){
+//            if (k % 2==0) {
+//                ie += k;
+//            }
+//            k++;
+//        }
+//    for (;;){
+//
+//    }
+//
+//    while (true){
+//
+//    }
+//九九乘法表
+//        for (int  i = 1; i<=9; i++){
+//            for (int j = 1; j <=i; j++){
+//                System.out.print(i+"*" +j+"="+(i*j)+" ");
+//
+//            }
+//            System.out.println();
+//        }
+//int[] oo = new int[4];
+//int[] io = new int[]{1,2,3,4,5,6};
+//int[] i = new int[4];
+//
+//        System.out.println(i[2]);
+//        i[2]= 2;
+//        System.out.println(i[2]);
+
+        int [][] i = new int[][]{
+                {1,2},{2,4}
+        };
+
+        System.out.println(i[1][1]);
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
 

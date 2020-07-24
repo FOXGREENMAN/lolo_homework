@@ -11,6 +11,9 @@ public class Trader extends  Order {
     private Date ctime;
     private Date mtime;
 
+    public  Trader (){
+
+    }
     public BigDecimal getPrice() {
         return price;
     }
