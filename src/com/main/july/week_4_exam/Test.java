@@ -1,4 +1,4 @@
-package com.main.whiteBoard.arrayList;
+package com.main.july.week_4_exam;
 
 import com.main.utils.BeanUtils;
 
