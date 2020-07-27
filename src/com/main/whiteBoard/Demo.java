@@ -8,7 +8,16 @@ import java.util.Map;
 public class Demo {
     public static void main(String[] args) {
 
-       /* // 这里定义一个字符串;
+        char2Int('z');
+
+    }
+
+    public static void char2Int(char ch){
+        System.out.println((int)ch-96);
+    }
+
+    public static void something(){
+         /* // 这里定义一个字符串;
         String resultStr = "lolo_";
 
         // 这里定义一个新的字符串, 调用getStr方法, 用新的字符串接收方法的返回值;
@@ -17,7 +26,6 @@ public class Demo {
         // 这里打印新的字符串接收的东西;
         System.out.println(newResult);*/
         pool();
-
     }
 
     // 这个方法接收一个字符串, 然后在这个字符串的末尾加上FOXMAN, 返回给调用者; 返回的也是一个字符串;
