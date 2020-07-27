@@ -26,7 +26,7 @@ mtime // 日期类型, 更新时间
 3. 创建一个方法, 用于存储订单
 
 方法接收一个订单, key使用订单ID, value使用订单对象本身;
-将订单存入 src\com\main\july\week_5_exam\order_exam\Database_laze.java 对象的map属性中; 
+将订单存入 src\com\main\july\week_5_exam\order_exam\DatabaseHungry.java 对象的map属性中; 
 
 调用方式 Map<String,Object> orderDb = Database_laze.getInstance().dbMap;
 

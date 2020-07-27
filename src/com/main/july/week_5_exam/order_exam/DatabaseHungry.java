@@ -5,14 +5,14 @@ import java.util.Map;
 /**
  * Created by admin on 2020/7/28.
  */
-public class Database_laze {
+public class DatabaseHungry {
 
-    private Database_laze(){}
+    private DatabaseHungry(){}
 
     private Map<String,Object> dbMap;
 
-    public static Database_laze getInstance(){
-        return new Database_laze();
+    public static DatabaseHungry getInstance(){
+        return new DatabaseHungry();
     }
 
 }
