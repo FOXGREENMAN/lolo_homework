@@ -9,9 +9,6 @@ public class Test6 {
     }
 
 
-
-
-
     public static int shuziwei(long a, int b, int c){
         String s =a+"";
         String ins= s.substring(2);

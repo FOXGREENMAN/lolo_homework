@@ -5,12 +5,26 @@ import java.util.Map;
 
 public class Test5 {
     public static void main(String[] args) {
-        Map<String,Integer> map = new HashMap<String, Integer>();
-        map.put("appId",123213);
+        Map<Integer,String> map = new HashMap<Integer,String >();
+        map.put(1,"dasdsad");
+        sadsad(map);
+
+
 
     }
-    public static void sadsad( Map<String,Integer> map){
-                map.containsKey("sadasd");
+    public static void sadsad( Map<Integer,String> map){
 
+        if ( map.containsValue("sadsad") == true){
+            System.out.println("ok");
+        }else {
+            System.out.println("no");
+            return;
+        }
+//ssssssssssssssssssssssssss................
+
+                map.containsKey(1);
+                map.containsValue("sdadsa");
+
+/////////asdsadsadsa
     }
 }
