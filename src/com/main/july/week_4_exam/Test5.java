@@ -1,11 +1,23 @@
 package com.main.july.week_4_exam;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Test5 {
     public static void main(String[] args) {
+
         Map<Integer,String> map = new HashMap<Integer,String >();
+        Map<String, Object> tTable = new Hashtable<>();
+
+        tTable.put("a",null);
+        map.put(1,null);
+
+
+        Map<String, Object> tMap = new TreeMap<>();
+
+        List<String> list = new ArrayList<>();
+
+        List<String> listLink = new LinkedList<>();
+
         map.put(1,"dasdsad");
         sadsad(map);
 
