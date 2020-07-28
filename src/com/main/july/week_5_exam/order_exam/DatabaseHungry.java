@@ -9,10 +9,12 @@ public class DatabaseHungry {
 
     private DatabaseHungry(){}
 
+    private static DatabaseHungry data = new DatabaseHungry();
+
     private Map<String,Object> dbMap;
 
     public static DatabaseHungry getInstance(){
-        return new DatabaseHungry();
+        return data;
     }
 
 }
