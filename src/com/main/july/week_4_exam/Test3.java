@@ -25,9 +25,11 @@ public class Test3 {
 //        }
         List<Integer> list1 = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
-//            for (int j = 0; j < list.size(); j++) {
-//                System.out.println(list.get(j)+"_"+list.get(i));
-//            }
+            for (int j = 0; j < list.size(); j++) {
+                list.get(j);
+
+                System.out.println(list.get(j)+"_"+list.get(i));
+            }
         }
         System.out.println(list);
 //        System.out.println(list);
