@@ -52,9 +52,6 @@ public class Test7 {
             }
                 System.out.println(map.containsKey(param[i]));
          }
-
-
-
         for (String key:map.keySet()) {
 //            System.out.println("map的key=" + key + ", map的value=" + map.get(key));
         }
