@@ -26,7 +26,7 @@ mtime // 日期类型, 更新时间
 3. 创建一个方法, 用于存储订单
 
 方法接收一个订单, key使用订单ID, value使用订单对象本身;
-将订单存入 src\com\main\july\week_5_exam\order_exam\DatabaseHungry.java 对象的 dbMap 属性中; 
+将订单存入 src\com\main\july\week_5_exam\order_exam\dao\DatabaseHungry.java 对象的 dbMap 属性中; 
 
 调用方式 Map<String,Object> orderDb = Database_laze.getInstance().dbMap;
 
@@ -45,3 +45,10 @@ mtime // 日期类型, 更新时间
 有Controller层和Service层; 
 Controller层负责接收参数, 传递给Service层; 
 在Service层中, 将订单存入第三步创建的数据库map中; 
+
+5. 撤销订单业务
+
+创建一个方法, 接收一个参数, 订单ID; 方法返回删除结果;
+根据订单ID 在map中找到订单, 进行删除;
+
+要求: 对找到的订单判断状态, 状态不为2的订单才可以删除, 否则打印报错, 返回删除失败;
