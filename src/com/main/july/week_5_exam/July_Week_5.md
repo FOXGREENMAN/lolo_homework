@@ -32,3 +32,21 @@ java
 -- > 为什么第三行编译不报错;
 -- > 第二行如何修改, 有几种修改方式;
 
+10. Integer类 valueOf方法的使用
+分别传入以下参数，观察程序输出结果：
+1)传入数字类型字符串；
+2)传入非数字类型字符串；
+3)传入null；
+思考：为什么能传入null？
+
+11.Byte类 使用intValue方法将一个int类型数字转换为Integer；
+思考：Byte类中可以有将int类型转换为byte类型的方法吗？有的话有什么问题？
+
+12.String类 基本操作，自己实现栗子
+1)截取字符串：输入“foxman”，输出“fox”；
+2)反向截取字符串：输入“foxman-lolo“，输出“lolo“；
+3)截取字符串子串：输入“FOXgreenMAN@163.com”，输出“green“
+4)截取一级域名：输入“www.chainup.com”，输出“chainup“，进阶要求，输入任意www.xxxyyyzzz.com或者www.aaabbb.net这种域名，都能截取到www和com中间的字符串；
+5)获取字符串长度，自己写栗子；
+6)字符串大小写转换，自己写栗子；
+7)字符串字母提取，将一个单词的每个字母依次输出，例如 chainup，依次输出c，h，a，i，n，u，p；要求：不能在输入时手动写入分隔符；
