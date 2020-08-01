@@ -1,5 +1,7 @@
 package com.main.july.week_5_exam.order_exam.dao;
 
+import com.main.july.week_5_exam.order_exam.entity.Order;
+
 import java.util.Map;
 
 /**
@@ -14,7 +16,8 @@ public class DatabaseHungry {
     private static DatabaseHungry data = new DatabaseHungry();
 
     // 存储数据对象, key为订单ID value为订单对象
-    private Map<String,Object> dbMap;
+    public Map<Long, Order> dbMap;
+
 
     /**
      * 获取数据存储对象方法

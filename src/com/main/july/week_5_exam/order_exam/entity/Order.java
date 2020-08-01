@@ -21,7 +21,7 @@ public class Order {
     private byte oStatus;
 
     //成交记录列表
-    private List<Trade> tradeList = new ArrayList<Trade>();
+    private List<Trade> tradeList;
 
     // 创建时间
     private  Date ctime;
