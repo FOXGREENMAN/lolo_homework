@@ -2,7 +2,12 @@ package com.main.july.week_5_exam.order_exam.controller;
 
 import com.main.july.week_5_exam.order_exam.service.OrderService;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Controller层
@@ -22,10 +27,20 @@ public class OrderAct {
 
         OrderService service = new OrderService();
 
+
+        Pattern pattern = Pattern.compile("-?[0-9]+(.[0-9]+)?");
+        Matcher isNum = pattern.matcher((CharSequence) paraMap);
+        if( !isNum.matches() ){
+            return false;
+        }else{
+            System.out.println("成功");
+        }
+
         boolean isSucc = service.createOrder(paraMap);
 
         return isSucc;
     }
+
 
     /**
      * 删除订单接口
@@ -39,4 +54,5 @@ public class OrderAct {
 
         return isSucc;
     }
+
 }
