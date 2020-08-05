@@ -140,4 +140,13 @@ public class Demo {
 
     }
 
+    public  static  void  equa(){
+        String str1 = "abc";
+        String str2 = new String("abc");
+        String str3 = "ABC";
+        System.out.println(str1.equals(str2)); // 输出 true
+        System.out.println(str1.equals(str3)); // 输出 false
+
+    }
+
 }

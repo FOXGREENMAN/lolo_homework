@@ -26,16 +26,9 @@ public class OrderAct {
     public boolean createOrder(Map<String,String> paraMap){
 
         OrderService service = new OrderService();
-
-
-        Pattern pattern = Pattern.compile("-?[0-9]+(.[0-9]+)?");
-        Matcher isNum = pattern.matcher((CharSequence) paraMap);
-        if( !isNum.matches() ){
-            return false;
-        }else{
-            System.out.println("成功");
-        }
-
+        String str = paraMap.get("price");
+//        Demo.isNumeric(str);
+//        Demo.isNumber(str);
         boolean isSucc = service.createOrder(paraMap);
 
         return isSucc;

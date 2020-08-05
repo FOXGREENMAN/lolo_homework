@@ -20,9 +20,15 @@ public class Application {
 //        A aBean = c.get(0);
 //        aBean.getList();
 
-        OrderAct orderAct = new OrderAct();
-        Map<String,String> paraMap = new Hashtable<String, String>();
-        paraMap.put("123213","2131231");
-        orderAct.createOrder(paraMap);
+
+
+//        OrderAct orderAct = new OrderAct();
+//        Map<String,String> paraMap = new Hashtable<String, String>();
+//        paraMap.put("123213","2131231");
+//        orderAct.createOrder(paraMap);
+
+
+
+
     }
 }
