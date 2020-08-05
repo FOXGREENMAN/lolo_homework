@@ -10,7 +10,7 @@ public class CheckParam {
     public static boolean check(String str) {
         Pattern pattern = Pattern.compile("-?[0-9]+(.[0-9]+)?");
         Matcher isNum = pattern.matcher(str);
-        int i =Integer.parseInt(str);
+        int i =Integer.parseInt(str); // 如果你传入的字符串是abc这种的话, 这里就报错了
         if (!isNum.matches()) {
             return false;
         }if (str.matches("-?[0-9]+.?[0-9]*")){
