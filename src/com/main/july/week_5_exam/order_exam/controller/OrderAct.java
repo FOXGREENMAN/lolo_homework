@@ -27,6 +27,12 @@ public class OrderAct {
 
         OrderService service = new OrderService();
         String str = paraMap.get("price");
+        if (CheckParam.check(str) ){
+            System.out.println("succ");
+        }else {
+            System.out.println("fall");
+        }
+
 //        Demo.isNumeric(str);
 //        Demo.isNumber(str);
         boolean isSucc = service.createOrder(paraMap);
