@@ -45,7 +45,7 @@ public class OrderService {
         o.setOrderId(orderId);
         o.setSide(paraMap.get("side"));
         o.setPrice(Double.valueOf(paraMap.get("price")));
-        o.setPrice(Double.valueOf(paraMap.get("volume")));
+//        o.setPrice(Double.valueOf(paraMap.get("volume")));
 
         // 保存订单
         return saveOrder(o);

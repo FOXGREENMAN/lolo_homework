@@ -22,10 +22,10 @@ public class Application {
 
 
 
-//        OrderAct orderAct = new OrderAct();
-//        Map<String,String> paraMap = new Hashtable<String, String>();
-//        paraMap.put("123213","2131231");
-//        orderAct.createOrder(paraMap);
+        OrderAct orderAct = new OrderAct();
+        Map<String,String> paraMap = new Hashtable<String, String>();
+        paraMap.put("price","12");
+        orderAct.createOrder(paraMap);
 
 
 

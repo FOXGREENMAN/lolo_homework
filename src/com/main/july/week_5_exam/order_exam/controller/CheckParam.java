@@ -4,8 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CheckParam {
-    final static int price_day_max = 12;
-    final  static int price_day_min = 12;
+
+    final static int price_day_max = 0;
+    final  static int price_day_min = 0;
 
     public static boolean check(String str) {
         Pattern pattern = Pattern.compile("-?[0-9]+(.[0-9]+)?");
