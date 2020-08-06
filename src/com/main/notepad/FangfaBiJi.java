@@ -34,4 +34,5 @@ public class FangfaBiJi {
         A aBean = c.get(0);
         aBean.getList();
     }
+
 }

@@ -27,8 +27,10 @@ public class OrderAct {
 
         OrderService service = new OrderService();
         String str = paraMap.get("price");
-        if (CheckParam.check(str) ){
-            System.out.println("succ");
+        if (CheckParamByFox.check(str)){
+            System.out.println("判断数字非负数,非字母通过");
+        }if (CheckParamByFox.eheck(str)){
+            System.out.println("判断价格通过");
         }else {
             System.out.println("fall");
         }

@@ -21,11 +21,17 @@ public class Application {
 //        aBean.getList();
 
 
-
         OrderAct orderAct = new OrderAct();
         Map<String,String> paraMap = new Hashtable<String, String>();
         paraMap.put("price","12");
+        paraMap.put("price","sadasd");
+        paraMap.put("price","-123");
+        paraMap.put("","");
         orderAct.createOrder(paraMap);
+        for (String key:paraMap.keySet()) {
+            System.out.println("map的key="+ key+", map的value="+paraMap.get(key));
+
+        }
 
 
 
