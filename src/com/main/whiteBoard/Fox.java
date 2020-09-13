@@ -6,12 +6,30 @@ package com.main.whiteBoard;
 public class Fox {
     private int age;
     private String name;
+    private Long uid;
+    private String InviteCode;
 
     public Fox(){}
 
     public Fox(int age, String name){
         this.age = age;
         this.name = "name";
+    }
+
+    public String getInviteCode() {
+        return InviteCode;
+    }
+
+    public void setInviteCode(String inviteCode) {
+        InviteCode = inviteCode;
+    }
+
+    public Long getUid() {
+        return uid;
+    }
+
+    public void setUid(Long uid) {
+        this.uid = uid;
     }
 
     public int getAge() {
