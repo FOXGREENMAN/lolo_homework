@@ -10,10 +10,11 @@ public class HeLanDi {
                 new Class[]{SpiderSuit.class},
                 new Karen(spiderSuit)
         );
+        System.out.println("1");
         spiderSuitNew.shot();
         spiderSuitNew.fly();
         spiderSuitNew.run();
 
- 
+
     }
 }
